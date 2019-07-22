@@ -8,12 +8,11 @@ subprojects {
 }
 allprojects{
     apply plugin: 'java'
-    version = '1.0'
+    version = '2.0'
     repositories {
         mavenCentral()
     }
 }
-version = '0.0.1'
 dependencies {
     compile project (':projectLogic')
 }
