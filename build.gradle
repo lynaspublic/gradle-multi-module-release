@@ -1,0 +1,22 @@
+allprojects{
+    apply plugin: 'java'
+    version = '1.0'
+    repositories {
+        mavenCentral()
+    }
+}
+
+dependencies {
+    compile project (':projectLogic')
+}
+
+project(':projectLogic'){
+    dependencies{
+        compile 'org.apache.commons:commons-lang3:3.3.2'
+    }
+}
+
+//task run(type: JavaExec){
+//    main = 'com.lynas.Main'
+//    classpath = runtimeClasspath
+//}
